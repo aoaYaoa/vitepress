@@ -1,0 +1,50 @@
+/* 自定义首页渐变背景 */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #4c09b9 50%);
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+/* 暗色模式下的渐变色调整 */
+.dark {
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #47caff);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #4c09b9 50%);
+}
+
+/* 首页标题渐变效果 */
+.VPHomeHero .name,
+.VPHomeHero .text {
+  background: var(--vp-home-hero-name-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--vp-home-hero-name-color);
+}
+
+/* 首页图片背景效果 */
+.VPHomeHero .image-bg {
+  background-image: var(--vp-home-hero-image-background-image);
+  filter: var(--vp-home-hero-image-filter);
+}
+
+/* 增强首页卡片悬浮效果 */
+.vp-doc .custom-block {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vp-doc .custom-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 特性部分渐变背景 */
+.VPFeature {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.VPFeature:hover {
+  transform: translateY(-5px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+} 
