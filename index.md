@@ -6,7 +6,7 @@ hero:
   text: "又是希望天降横财的一天！！！"
   tagline: 记录学习与生活的点滴，分享前端开发的知识和经验
   image:
-    src: /assets/images/avatar.jpg
+    src: assets/images/avatar.jpg
     alt: aya Logo
   actions:
     - theme: brand
