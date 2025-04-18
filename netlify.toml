@@ -1,0 +1,12 @@
+[build]
+  publish = ".vitepress/dist"
+  command = "npm run docs:build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# 重定向和自定义头信息
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
